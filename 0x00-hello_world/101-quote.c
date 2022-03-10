@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * main - prints quote to output
  * fprintf - writes passed string to standard error
@@ -10,6 +11,6 @@ int main(void)
 {
 	char firstStr[] = "and that piece of art ";
 	char secStr[] = "is useful\" - Dora Korpar, 2015-10-19";
-	fprintf(stderr, firstStr + secStr);
+	fprintf(stderr, "%s", strcat(firstStr, secStr));
 	return (1);
 }
