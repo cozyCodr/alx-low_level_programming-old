@@ -10,6 +10,6 @@ int main(void)
 {
 	char firstStr[] = "and that piece of art ";
 	char secStr[] = "is useful\" - Dora Korpar, 2015-10-19";
-	fprintf(stderr, fisrtstr + secstr);
+	fprintf(stderr, firstStr + secStr);
 	return (1);
 }
