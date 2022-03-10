@@ -10,7 +10,8 @@
 int main(void)
 {
 	char firstStr[] = "and that piece of art ";
-	char secStr[] = "is useful\" - Dora Korpar, 2015-10-19";
+	char secStr[] = "is useful\" - Dora Korpar, 2015-10-19\n";
+
 	fprintf(stderr, "%s", strcat(firstStr, secStr));
 	return (1);
 }
