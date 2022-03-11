@@ -8,7 +8,7 @@ int main(void)
 	int c;
 
 	c = 0x30;
-	while (c < 0x40)
+	while (c < 0x3A)
 	{
 		putchar(c);
 		c = c + 1;
