@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - prints all single digit numbers less that 10
- * Return: Zero if code runs without exception
- */
+* main - prints all single digit numbers less that 10
+* Return: Zero if code runs without exception
+*/
 int main(void)
 {
 	int i;
