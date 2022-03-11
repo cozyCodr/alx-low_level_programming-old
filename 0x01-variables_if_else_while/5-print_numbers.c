@@ -1,15 +1,17 @@
 #include <stdio.h>
 /**
-* main - prints all single digit numbers less that 10
-* Return: Zero if code runs without exception
-*/
+ * main - prints numbers 0-9
+ * Return: zero if code runs without exception
+ */
 int main(void)
 {
 	int i;
-	
-	for (i = 0; i < 10; i = i + 1)
+
+	i = 0;
+	while (i < 10')
 	{
-		printf("%d", i);
+		printf(i);
+		i = i + 1;
 	}
 	putchar('\n');
 	return (0);
