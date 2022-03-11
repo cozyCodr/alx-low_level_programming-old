@@ -4,7 +4,8 @@
 #include <stdio.h>
 /**
  * main - checks if a random number is positive, negative or zero
- */
+ * Return - 0 if code runs without error
+ * /
 int main(void)
 {
 	int n;
@@ -13,10 +14,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-		printf("%d is positive", n);
+		printf("%d is positive\n", n);
 	else if (n == 0)
-		printf("%d is zero", n);
+		printf("%d is zero\n", n);
 	else
-		printf("%d is negativee", n);
+		printf("%d is negative\n", n);
 	return (0);
 }
