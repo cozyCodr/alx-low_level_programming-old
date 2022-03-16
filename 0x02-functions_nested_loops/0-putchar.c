@@ -1,5 +1,4 @@
 #include <string.h>
-#include "_putchar.c"
 #include "main.h"
 /**
  * main - program prints _puchar character by character
