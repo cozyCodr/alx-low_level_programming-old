@@ -12,7 +12,7 @@ int main(void)
 	char word[8] = "_putchar";
 	int len = 0;
 
-	while (len < strlen(word))
+	while (len < (int)strlen(word))
 	{
 		_putchar(word[len]);
 		len = len + 1;
