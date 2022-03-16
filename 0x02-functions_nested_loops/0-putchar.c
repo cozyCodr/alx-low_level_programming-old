@@ -1,5 +1,5 @@
 #include <string.h>
-#include <unistd.h>
+#include "_putchar.c"
 #include "main.h"
 /**
  * main - program prints _puchar character by character
@@ -19,8 +19,4 @@ int main(void)
 	}
 	_putchar('\n');
 	return (0);
-}
-int _putchar(char c)
-{
-	return (write( 1, &c, 1));
 }
