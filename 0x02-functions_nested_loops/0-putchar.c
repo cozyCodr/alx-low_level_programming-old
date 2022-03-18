@@ -3,7 +3,6 @@
 /**
  * main - program prints _puchar character by character
  * _putchar - writes the character c to stdout
- * @c: The character to print
  * Return: Always return 0
  */
 int main(void)
