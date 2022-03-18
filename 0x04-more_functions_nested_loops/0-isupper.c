@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - returns 1 if uppercase else returns 0
+ * _isupper - returns 1 if uppercase else returns 0
  * @c: parametre tested if uppercase or not
  * Return: 1 if true, 0 if false
  */
