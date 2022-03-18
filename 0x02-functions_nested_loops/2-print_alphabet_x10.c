@@ -13,6 +13,7 @@ void print_alphabet_x10(void)
 			_putchar(c);
 			c = c + 1;
 		}
+		start = start + 1;
 		_putchar('\n');
 	}
 }
