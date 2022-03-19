@@ -6,7 +6,6 @@
  */
 int print_last_digit(int ld)
 {
-	int ld;
 	long store;
 
 	store = ld;
