@@ -6,7 +6,7 @@
  */
 void jack_bauer(void)
 {
-	char time[5] = ['0','0',':','0','0'];
+	char time[5] = {'0','0',':','0','0'};
 
 	for (int w = 0; w <= 2; w++)
 	{
