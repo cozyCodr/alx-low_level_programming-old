@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * print_sign - prints out the sign of argument passed
  * @n: param to be checked for sign
