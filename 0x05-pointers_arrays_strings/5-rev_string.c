@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_rev - prints string in reverse
+ * rev_string - reverses string in memory
  * @s: subject string
  * Return: Nothing
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int len;
 	int rsl;
@@ -27,5 +27,5 @@ void print_rev(char *s)
 		rsl += 1;
 		len -= 1;
 	}
-	*s = revstring;
+	s = revstring;
 }
