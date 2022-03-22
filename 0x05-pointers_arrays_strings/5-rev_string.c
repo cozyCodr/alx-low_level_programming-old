@@ -27,5 +27,5 @@ void rev_string(char *s)
 		rsl += 1;
 		len -= 1;
 	}
-	s = revstring;
+	*s = *revstring;
 }
