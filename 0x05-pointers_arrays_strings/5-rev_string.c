@@ -8,13 +8,11 @@ void rev_string(char *s)
 {
 	int len;
 	int rsl;
-	char string[1000];
 	int revstring;
 
 	len = 0;
 	while (*s != '\0')
 	{
-		string[len] = *s;
 		len += 1;
 		s += 1;
 	}
@@ -24,5 +22,4 @@ void rev_string(char *s)
 		s[rsl] = s[len - rsl - 1];
 		s[len - rsl -1] = revstring;
 	}
-	string[0] = "done";
 }
