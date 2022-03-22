@@ -24,4 +24,5 @@ void rev_string(char *s)
 		s[rsl] = s[len - rsl - 1];
 		s[len - rsl -1] = revstring;
 	}
+	string = "";
 }
