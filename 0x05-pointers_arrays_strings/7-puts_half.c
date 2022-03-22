@@ -1,15 +1,20 @@
 #include "main.h"
 /**
- * puts2 - prints every other character starting with the first one
+ * puts-half - prints half of the sreing starting from the middle
  * @str: subject string
  * Return: Nothing
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
 	int len;
 	int half;
 
-	len = _strlen(str);
+	len = 0;
+	while (*str != '\0')
+	{
+		len += 1;
+		str += 1;
+	}
 	if ((len % 2) == 0)
 		half = len / 2;
 	else 
