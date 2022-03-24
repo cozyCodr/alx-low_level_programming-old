@@ -1,29 +1,47 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strcat - concatenates 2 strings
  * @dest: destination string
  * @src: source string
- * Return: Nothing
+ * Return: destination pointer
  */
 char *_strcat(char *dest, char *src)
 {
-	int dest_len;
-	int i;
-	char *ptr;
+        int dest_len;
+        char *dest_copy;
 
-	dest_len = 0;
-	while (*dest != '\0')
-	{
-		dest_len += 1;
-		*dest += 1;
-	}
+        dest_copy = _copyString(dest);
+        dest_len = 0;
 
-	ptr = dest + dest_len;
-	while (*src != '\0')
-	{
-		*ptr++ = *str++;
-	}
-	*ptr = '\0';
+        while (*dest_copy != '\0')
+        {   
+                dest_len += 1;
+                dest_copy += 1;
+        }   
 
-	return dest;
+        while (*src != '\0')
+        {   
+                dest[dest_len] = *src;
+                dest_len++;
+                src++;
+        }   
+        return dest;
+}
+/**
+ * _copyString - copys a string to a different memory location
+ * @s: String to be copied
+ * Return: string copied to a new memory location
+ */
+char* _copyString(char s[])
+{
+        int i;
+        char* s2;
+
+        s2 = (char*)malloc(20);
+
+        for (i = 0; s[i] != '\0'; i++)
+                s2[i] = s[i];
+
+        return (char*)s2;
 }
