@@ -13,7 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 	char *dest_copy;
 
-	dest_copy = copyString(dest);
+	dest_copy = _copyString(dest);
 
 	dest_len = 0;
 	while (*dest_copy != '\0')
