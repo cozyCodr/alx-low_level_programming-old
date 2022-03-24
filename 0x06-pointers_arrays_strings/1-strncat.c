@@ -43,5 +43,5 @@ char* _copyString(char s[])
         for (i = 0; s[i] != '\0'; i++)
                 s2[i] = s[i];
 
-        return (char*)s2;
+        return ((char*)s2);
 }
