@@ -9,7 +9,7 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *ptrDest;
-	const char ptrSrc;
+	const char *ptrSrc;
 
 	ptrDest = (char *)dest;
 	ptrSrc = (const char *)src;
