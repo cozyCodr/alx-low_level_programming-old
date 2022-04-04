@@ -5,7 +5,7 @@
  * @argv: array of string arguments
  * Return: 0 if run without errors
  */
-int main(int argc, char **argv)
+int main(int __attribute__((__unused__)) argc, char **argv)
 {
 	printf("%s", argv[0]);
 	putchar('\n');
