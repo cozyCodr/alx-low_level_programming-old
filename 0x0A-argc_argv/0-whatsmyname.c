@@ -5,9 +5,9 @@
  * @argv: array of string arguments
  * Return: 0 if run without errors
  */
-int main(int argc **argv)
+int main(int argc, char **argv)
 {
-	printf(argv[0]);
-	_putchar('\n');
+	printf("%s", argv[0]);
+	putchar('\n');
 	return (0);
 }
