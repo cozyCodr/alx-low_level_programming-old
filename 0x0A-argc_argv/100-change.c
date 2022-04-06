@@ -24,7 +24,6 @@ int main(int argc, char **argv)
 	balance = atoi(argv[1]);
 	for (i = 0; i < 5; i++)
 	{
-		printf("Balance in for loop: %d\n", balance);
 		count += balance / change[i];
 		if ((balance % change[i]) == 0)
 			break;
