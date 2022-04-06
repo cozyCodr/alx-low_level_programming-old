@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - prints the name of the program
+ * main - multiplies argments
  * @argc: number of arguments passed
  * @argv: array of string arguments
  * Return: 0 if run without errors and 1 if it runs with errors
