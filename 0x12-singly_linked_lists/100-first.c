@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * myStartupFun - Print text before function start 
  * Return: nothing
