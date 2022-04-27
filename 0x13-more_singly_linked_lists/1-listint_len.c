@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_listint - returns number of elements in a list
+ * listint_len - returns number of elements in a list
  * @h: head of list
  * Return: number of nodes
  */
