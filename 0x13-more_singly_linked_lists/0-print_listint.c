@@ -1,6 +1,6 @@
-#include "lists.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include "lists.h"
 /**
  * print_listint - prints items in each node of list
  * @h: head of list
