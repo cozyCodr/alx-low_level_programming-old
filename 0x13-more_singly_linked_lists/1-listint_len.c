@@ -1,6 +1,6 @@
-#include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "lists.h"
 /**
  * listint_len - returns number of elements in a list
  * @h: head of list
