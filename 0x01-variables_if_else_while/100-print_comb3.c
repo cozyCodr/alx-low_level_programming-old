@@ -7,10 +7,11 @@
 int main(void)
 {
 	int i, j, s, p, x;
-	char tmpString[2], combs[45][2], temp[2];
-	char first[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-	char second[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+	int tmpString[2], combs[45][2], temp[2];
+	int first[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int second[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
+	s = 0;
 	for (i = 0; i < ((int)(sizeof(first) / sizeof(first[0]))); i++)
 	{
 		for (j = 0; j < ((int)(sizeof(second) / sizeof(second[0]))); j++)
@@ -29,16 +30,14 @@ int main(void)
 	{
 		tmpString[0] = combs[p][0];
 		tmpString[1] = combs[p][1];
-		if (tmpString[0] == '8' && tmpString[1] == '9')
+		if (tmpString[0] == 8 && tmpString[1] == 9)
 		{
-			putchar(tmpString[0]);
-			putchar(tmpString[1]);
+			for (x = 0; x < 2; x++)
+				putchar(tmpString[x] + '0');
 			continue;
 		}
 		for (x = 0; x < 2; x++)
-		{
-			putchar(tmpString[x]);
-		}
+			putchar(tmpString[x] + '0');
 		putchar(',');
 		putchar(' ');
 
