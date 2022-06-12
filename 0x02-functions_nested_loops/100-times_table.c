@@ -13,7 +13,7 @@ void print_times_table(int n)
 	char *res;
 	char temp[5];
 
-	if (n <= 15 || n > 0)
+	if (n <= 15 && n > 0)
 	{
 		for (x = 0; x <= n; x++)
 		{
@@ -25,7 +25,7 @@ void print_times_table(int n)
 				if (y == n)
 				{
 					printf("%4s", res);
-					_putchar('\n');
+					putchar('\n');
 				}
 				else if (y == 0)
 					printf("%s", res);
