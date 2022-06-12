@@ -13,6 +13,8 @@ void print_times_table(int n)
 	char *res;
 	char temp[5];
 
+	if (n = 0)
+		printf("0");
 	if (n <= 15 && n > 0)
 	{
 		for (x = 0; x <= n; x++)
