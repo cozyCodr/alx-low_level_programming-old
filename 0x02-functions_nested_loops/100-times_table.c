@@ -25,7 +25,7 @@ void print_times_table(int n)
 				if (y == n)
 				{
 					printf("%4s", res);
-					_putchar('\n')
+					_putchar('\n');
 				}
 				else
 					printf("%4s,", res);
