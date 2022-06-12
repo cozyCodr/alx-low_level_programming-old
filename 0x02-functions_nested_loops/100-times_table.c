@@ -27,6 +27,8 @@ void print_times_table(int n)
 					printf("%4s", res);
 					_putchar('\n');
 				}
+				else if (y == 0)
+					printf("%s", res);
 				else
 					printf("%4s,", res);
 			}
