@@ -14,7 +14,10 @@ void print_times_table(int n)
 	char temp[5];
 
 	if (n == 0)
+	{
 		printf("0");
+		putchat('\n');
+	}
 	if (n <= 15 && n > 0)
 	{
 		for (x = 0; x <= n; x++)
