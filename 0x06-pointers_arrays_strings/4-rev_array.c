@@ -8,39 +8,24 @@
  */
 void reverse_array(int *a, int n)
 {
-	int *array_copy;
+	int array_copy[20];
 	int len;
-	int pos;
 	int i;
 
-	array_copy = _copyString(a);
 	len = n;
-	pos = len - 1;
 	i = 0;
 
-	while (pos >= 0)
+	while (len > 0)
 	{
-		a[i] = array_copy[pos];
+		array_copy[i] = *(a + (len - 1));
+		len -= 1;
 		i += 1;
-		pos -= 1;
 	}
-}
-/**
- * _copyString - copies string to different memory location
- * @s: string to copy
- * Return: copied string
- */
-char* _copyString(char s[])
-{
-	int i;
-	char* s2;
 
-	s2 = (char*)malloc(20);
-
-	for (i = 0; s[i] != '\0'; i++)
+	i = 0;
+	while (i < 13)
 	{
-		s2[i] = s[i];
+		a[i] = array_copy[i];
+		i += 1;
 	}
-
-	return (char*)s2;
 }
