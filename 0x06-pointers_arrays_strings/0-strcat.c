@@ -6,7 +6,7 @@
  * @s: String to be copied
  * Return: string copied to a new memory location
  */
-char  _copyString(char s[])
+char *_copyString(char s[])
 {
 	int i;
 	char *s2;
