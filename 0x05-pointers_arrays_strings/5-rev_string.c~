@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+ * rev_string - prints in reverse
  * _strlen - count
  * @s: checked
  * Return: nothing
@@ -18,11 +19,7 @@ int _strlen(char *s)
 	}
 	return (len);
 }
-/**
- * rev_string - prints in reverse
- * @s: subject character
- * Return: Nothing
- */
+
 void rev_string(char *s)
 {
 	int strsize = _strlen(s);
