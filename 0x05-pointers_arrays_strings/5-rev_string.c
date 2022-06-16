@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * rev_string- prints in reverse
- * _strlen- count
+ * rev_string - prints in reverse
+ * _strlen - count
  * @s: checked
  * Return: nothing
  */
