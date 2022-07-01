@@ -1,29 +1,26 @@
 #include "main.h"
 /**
- * puts_half - prints half of the sreing starting from the middle
- * @str: subject string
- * Return: Nothing
+ *puts_half- print half
+ *@str:checked
+ *Return:nothing
  */
 void puts_half(char *str)
 {
-	int len;
-	int half;
 
-	len = 0;
-	while (*str != '\0')
+	int i, n;
+
+	i = 0;
+
+	while (*(str + i) != '\0')
 	{
-		str += 1;
-		len += 1;
+		i++;
 	}
-	if ((len % 2) == 0)
-		half = len / 2;
-	else 
-		half = (len - 1) / 2;
-
-	while (str[half] != '\0')
+	n = i / 2;
+	while (n <= i)
 	{
-		_putchar(*str);
-		str = str + 1;
+		_putchar(str[n]);
+		n++;
+
 	}
 	_putchar('\n');
 }
