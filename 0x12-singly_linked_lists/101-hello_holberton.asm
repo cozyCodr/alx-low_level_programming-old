@@ -1,19 +1,15 @@
-global _start
+section .data
+    msg db "Hello, Holberton", 0ah
 
 section .text
+    global _start
 
 _start:
-	MOV rax, 0x1
-	MOV rdi, 0x1
-	MOV rsi, msg
-	MOV rdx, msglength
-	SYSCALL
-
-	MOV rax, 0x3C
-	MOV rdi, 0x0
-	SYSCALL
-
-section .data
-	msg: DB "Hello, Holberton", 0xA
-	msglength: EQU $ -msg
-	
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, msg
+    mov rdx, 13
+    syscall
+    mov rax, 60
+    mov rdi, 0
+    syscall	
