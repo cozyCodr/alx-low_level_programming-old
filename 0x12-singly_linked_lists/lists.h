@@ -1,5 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
+#include <stdlib.h>
 
 void myStartupFun(void) __attribute__ ((constructor));
 int _putchar(char c);
